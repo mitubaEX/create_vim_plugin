@@ -11,7 +11,7 @@ do
   extension="${filename##*.}"
 
   # rename include file string
-  sed -i '' 's/sampleapp/$1/g' $filename
+  sed -i '' "s/sampleapp/$1/g" $filename
 
   # rename file name
   mv $filename "$dirname/$1.$extension"
